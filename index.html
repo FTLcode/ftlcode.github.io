@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ftlcode</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="for the love of code">
+        <meta name="author" content="Leo Kuznetsov">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="black">  <!-- Chrome, Firefox OS and Opera -->
+        <meta name="msapplication-navbutton-color" content="black">  <!-- Windows Phone -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">  <!-- iOS Safari -->
+        <link rel="manifest" href="main.manifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="icon" href="favicon.png" />  <!-- https://commons.wikimedia.org/wiki/File:Template_icon.svg -->
+    </head>
+
+    <body>
+        <main>
+            <hr>
+            <p>
+                ...for the love of code...<br>
+                <br>
+                <br>
+            </p>
+            <hr>
+            <p>
+                Hackers collective that makes code work.
+                <br>
+                <br>
+            </p>
+            <hr>
+            <p>
+                Specialized in software architecture design; conceptualization, prototyping, implementation of infinitesimal code.<br>
+                <br>
+            </p>
+            <hr>
+            <p>
+                Email for inquiries<br>
+                <a href="mailto:leo.kuznetsov@gmail.com?subject=For the Love of Code" class="swapper">leo.kuznetsov@gmail.com</a>.<br>
+                <br>
+            </p>
+            <hr>
+            <p>
+                Archive:<br>
+                <a target="_blank" href="https://ftlcode.github.io/">https://ftlcode.github.io/</a><br>
+                <br>
+            </p>
+            <hr>
+            <p>
+                More:<br>
+                <a target="_blank" href="https://github.com/leok7v/map">map.h/.c in C99</a><br>
+                <a target="_blank" href="https://gist.github.com/leok7v/604c0b85fac5c1511c95b6c855b238fb">array in C++</a><br>
+                <a target="_blank" href="https://github.com/leok7v/app.cocoa.gl">Minimalistic Cocoa OpenGL app</a><br>
+            </p>
+        </main>
+    </body>
+    <style>
+        html, body {
+            width:100%;
+            padding: 0;
+            margin: 0;
+            font-family: l, serif;
+            --line-height: 19px;
+        }
+
+        body {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: var(--line-height);
+            background-color: rgb(28,27,27);
+            color: rgb(255,255,255);
+        }
+
+        * {
+            font-variant-ligatures: none;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            /*margin-top: var(--line-height);*/
+        }
+
+        hr {
+            display: block;
+            height: var(--line-height);
+            margin: 0;
+            padding: 0;
+            /*background-color: red;*/
+            border: none;
+        }
+
+        a {
+            font-family: r;
+            text-decoration: none;
+            color: inherit;
+            transition: all 300ms;
+        }
+
+        a:hover {
+            color:rgb(100,200,200);
+        }
+
+        /* small */
+        main {
+            left: 1ch;
+            margin-right: 1ch;
+            max-width: 42ch;
+            padding-bottom: calc(1 * var(--line-height));
+            top: calc(1 * var(--line-height));
+            box-decoration-break: slice;
+            padding-bottom: calc(4 * var(--line-height));
+            /*background-color: rgba(200,0,0,0.2);*/
+        }
+
+        /* larger */
+        @media only screen and (min-width: 400px) {
+            main {
+                left: 2ch;
+                margin-right: 2ch;
+            }
+        }
+
+        /* large */
+        @media only screen and (min-width: 800px) {
+            main {
+                left: 4ch;
+                margin-right: 4ch;
+            }
+        }
+
+        main,
+        output {
+            position: absolute;
+            display: block;
+        }
+
+        output {
+            left:0;
+            right:0;
+            top:0;
+            pointer-events: none;
+            white-space: pre;
+            overflow-x: hidden;
+        }
+
+        output span {
+            display: block;
+        }
+
+        .disable-scroll {
+            bottom:0;
+            overflow-y: hidden;
+            position: fixed;
+        }
+
+        .disable-touch-select{
+            -webkit-touch-callout:none;
+            -webkit-user-select:none;
+            -khtml-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+        }
+
+        .hidden{
+            display: none;
+        }
+
+        .invisible {
+            color: transparent
+        }
+
+         @font-face {
+             font-family: "l";
+             src: url("LiberationMono-Regular-webfont.woff");
+             font-weight: normal;
+             font-style: normal;
+         }
+
+         @font-face {
+             font-family: "r";
+             src: url("LiberationMono-Regular-webfont.woff");
+             font-weight: normal;
+             font-style: normal;
+         }
+
+    </style>
+</html>
